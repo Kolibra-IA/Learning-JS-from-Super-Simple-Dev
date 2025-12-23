@@ -58,4 +58,4 @@ Your bank account has $100, you spend $20 on unch, $50 on dinner, and earn $200 
 Use document.body.innerHTML = ...; to make the web page blank.
 */
 
-document.body.innerHTML = '';s
+document.body.innerHTML = '';
