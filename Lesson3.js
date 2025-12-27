@@ -1,11 +1,10 @@
-
 /* Strings
 
 A string represents a text. It is as simple as that, and it is wrapped in quotation marks.
 
 */
 
-'Kolibra';
+"Kolibra";
 
 /*
     Also, we can add two strings together - a feature called concatenation.
@@ -13,11 +12,11 @@ A string represents a text. It is as simple as that, and it is wrapped in quotat
 
 //Input
 
-'Some' + 'Text';
+"Some" + "Text";
 
 //Output:
 
-'SomeText';
+("SomeText");
 
 /*
     There is this concept called type coercion(automatic type conversion), which happens when numbers are coerced t a string before concatenation.
@@ -25,11 +24,12 @@ A string represents a text. It is as simple as that, and it is wrapped in quotat
 
 //Input:
 
-'$' + 98;
+"$" + 98;
+s(
+  //Output:
 
-//Output:
-
-'$98';
+  "$98"
+);
 
 /*
 Strings follow order of operations:
@@ -37,7 +37,7 @@ Strings follow order of operations:
 
 //Input:
 
-'$' + (90+9);
+"$" + (90 + 9);
 
 //Output:
 
@@ -47,8 +47,8 @@ $99;
 
 //Input:
 
-`Mind your ${90+9} speech`;
+`Mind your ${90 + 9} speech`;
 
 //Output:
 
-'Mind your 99 speech';
+("Mind your 99 speech");

@@ -1,4 +1,3 @@
-
 /*Lesson 1
 
 - Learnt about what Javascript is: a language to give instructions to the computer for execution.
@@ -6,17 +5,16 @@
 - Wrote basic Javascript code in the console: */
 
 // Input:
-alert ('Kolibra');
+alert("Kolibra");
 
 //Output(A pop-up window displaying whatever goes in the brackets):
 
-Kolibra
+Kolibra;
 
 /*
  - Write some code to evaluate an expression: */
 
- 10-4
-
+10 - 4;
 
 /* Lesson 2*/
 
@@ -25,14 +23,14 @@ This was done directly in the console, but here is the code:
 */
 
 // Input:
-2*2
+2 * 2;
 // Output
-4
+4;
 
 //Input:
-5+5
+5 + 5;
 //Output:
-10
+10;
 
 /* Order of Operations and Brackets:
 - Brackets are priotized first.
@@ -42,17 +40,16 @@ This was done directly in the console, but here is the code:
 */
 
 // Input:
-5+6*6
+5 + 6 * 6;
 
 //Output:
-41 
-
-//Input
-(8-2)*8
+41(
+  //Input
+  8 - 2
+) * 8;
 
 //Output:
-48
-
+48;
 
 /*
 Rounding Numbers
@@ -62,7 +59,7 @@ Rounding Numbers
 Math.round(89.9);
 
 //Output:
-89
+89;
 
 /*
 Finally, I learnt that calculations involving floats can be inaccurate. 
@@ -74,15 +71,15 @@ When you are done, you can convert the result back to its original form by divid
 */
 
 //Input:
-4.7 + 6.9
+4.7 + 6.9;
 
 //Output
-11.600000000000001
+11.600000000000001(
+  //Fix
 
-//Fix
-
-//Input:
-(47+69)/10
+  //Input:
+  47 + 69
+) / 10;
 
 //Output
-11.6
+11.6;
