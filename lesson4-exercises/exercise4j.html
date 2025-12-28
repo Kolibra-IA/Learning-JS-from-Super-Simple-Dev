@@ -1,0 +1,34 @@
+<!--
+Question:
+Continuing from 4i, add onclick="" attributes to the two buttons:
+- When clicking 'Addto cart', createapopup with the text 'Added'.
+- When clicking 'Buy now', display the message 'Loading...' in the Console, and then create a popup with the text 'Purchased'.
+-->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Exercise 4i</title>
+    <style>
+      .yellow-button {
+        background-color: yellow;
+      }
+      .orange-button {
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Adults Plain Cotton T-shirt</p>
+    <p>Price: $7.99</p>
+    <button class="yellow-button" onclick="alert('Added');">Add to cart</button>
+    <button
+      class="orange-button"
+      onclick="console.log('Loading'); alert('Purchased');"
+    >
+      Buy now
+    </button>
+  </body>
+</html>
