@@ -1,0 +1,52 @@
+<!--
+Question: In the Cart Quantity project, add 2 more buttons '+4' and '+5', which increase the quantity by 4 and 5 when you click them. Try using +=.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cart Project</title>
+  </head>
+
+  <body>
+    <h1>Cart Quantity</h1>
+    <button onclick="console.log(`Cart Quantity : ${cartQuantity}`);">
+      Show Quantity
+    </button>
+    <button
+      onclick="cartQuantity++; console.log(`Cart Quantity : ${cartQuantity}`);"
+    >
+      Add to Cart
+    </button>
+    <button
+      onclick="cartQuantity +=2; console.log(`Cart Quantity : ${cartQuantity}`);"
+    >
+      +2
+    </button>
+    <button
+      onclick="cartQuantity +=3; console.log(`Cart Quantity : ${cartQuantity}`);"
+    >
+      +3
+    </button>
+    <button
+      onclick="cartQuantity +=4; console.log(`Cart Quantity : ${cartQuantity}`);"
+    >
+      +4
+    </button>
+    <button
+      onclick="cartQuantity +=5; console.log(`Cart Quantity : ${cartQuantity}`);"
+    >
+      +5
+    </button>
+    <button
+      onclick="cartQuantity = 0;console.log(`Cart quantity is reset.`); console.log(`Cart Quantity: ${cartQuantity}`);"
+    >
+      Reset Cart
+    </button>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>
