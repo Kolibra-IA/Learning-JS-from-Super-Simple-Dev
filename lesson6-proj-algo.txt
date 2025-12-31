@@ -1,0 +1,7 @@
+
+Rock-Paper-Scissors Algorithm
+
+1) You make a move by clicking a button.
+2) The computer makes a move at the same time as (1) above.
+3) The two moves are compared to get a result.
+4) The outcome is shown to the user via a pop-up.
