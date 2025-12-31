@@ -1,7 +1,13 @@
+The Rules:
+
+1) Rock beats scissors.
+2) Paper beats rock.
+3) Scissors beat paper.
+
 
 Rock-Paper-Scissors Algorithm
 
 1) You make a move by clicking a button.
 2) The computer makes a move at the same time as (1) above.
 3) The two moves are compared to get a result.
-4) The outcome is shown to the user via a pop-up.
+4) The outcome, based on the rules of the game, is shown to the user via a pop-up.
