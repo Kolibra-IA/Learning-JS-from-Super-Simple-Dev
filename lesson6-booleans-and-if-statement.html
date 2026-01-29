@@ -29,12 +29,59 @@
       //falsy values
 
       /*
-       - False.
-       - Nan.
-       - Null.
-       - Undefined.
-       - 0 (Zero).
+         - False.
+         - Nan.
+         - Null.
+         - Undefined.
+         - 0 (Zero).
+        */
+
+      /*
+        Shortcut for if-statements
+        - Ternary operator : ?:
+        - Guard Operator : &&
+        - Default operator: ||
+
+        */
+
+      /*
+      Ternary Operator:
+
+      true?'truthy' : 'falsy';
+
+      Advantage:
+
+      - Ternary operator can be used to return a value.
+
+        */
+
+      const result = true ? "truthy" : "falsy";
+
+      let result_variant;
+
+      if (true) {
+        result_variant = "truthy";
+      } else {
+        result_variant = "falsy";
+      }
+
+      /* Guard Operator:
+
+      - Used to guard an execution against resource wastage.
+      - Used for short-circuiting : an execution stoppage when the result is already known.
       */
+
+      const guard_result = false && "hello";
+
+      /*
+
+      Default Operator:
+
+      - Used to default an execution to a value if a condition is not met.
+      - Can also short-circuit an operation.
+      */
+
+      const currency = "EUR" || "USD";
     </script>
   </body>
 </html>
