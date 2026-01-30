@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6f</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Question:
+        Let's say we're trying to guess the result. Create a variable called 'guess' and save your guess (heads or tails).
+        - If your guess is matches the result display 'You win!' in the console.
+        - If your guess doesn't match the result, display 'You lose!' in the console.
+        */
+      const randomNumber = Math.random();
+      let result;
+      const guess = "Heads";
+      if (randomNumber < 0.5) {
+        result = "Heads";
+      } else {
+        result = "Tails";
+      }
+
+      if (guess === result) {
+        console.log("You win!");
+      } else {
+        console.log("You lose!");
+      }
+    </script>
+  </body>
+</html>
