@@ -1,0 +1,45 @@
+<!--mile - ft mile - km ft - mile ft - km km - mile km - ft-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 7h</title>
+  </head>
+  <body>
+    <script>
+      function convertLength(length, from, to) {
+        if (from === "miles" && to === "ft") {
+          return length * 5280 + to;
+        } else if (from === "miles" && to === "km") {
+          return length * 1.6 + to;
+        } else if (from === "ft" && to === "miles") {
+          return length / 5280 + to;
+        } else if (from === "ft" && to === "km") {
+          return length / 3280.84 + to;
+        } else if (from === "km" && to === "miles") {
+          return length / 1.6 + to;
+        } else if (from === "km" && to === "ft") {
+          return length * 3281 + to;
+        } else {
+          if (from !== "miles" && from !== "ft" && from !== "km") {
+            if (to !== "ft" && to !== "miles" && to !== "km") {
+              return `Invalid unit: ${from} and ${to}`;
+            } else {
+              return `Invalid unit: ${from}`;
+            }
+          } else if (from === to) {
+            return `Invalid unit: ${from}`;
+          } else if (to !== "ft" && to !== "miles" && to !== "km") {
+            return `Invalid unit: ${to}`;
+          }
+        }
+      }
+
+      console.log(convertLength(5, "km", "km"));
+      console.log(convertLength(5, "pb", "ft"));
+      console.log(convertLength(5, "ul", "xy"));
+    </script>
+  </body>
+</html>
