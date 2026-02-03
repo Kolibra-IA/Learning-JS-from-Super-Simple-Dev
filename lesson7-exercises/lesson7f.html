@@ -1,0 +1,36 @@
+<!--
+Question:
+Create a function "ConvertTemperature(degree, unit)" that takes a number and a unit("C" or "F") and convert it into the other unit:
+- ConvertTemperature(25, "C") => 77.
+- ConvertTemperature(86, "F") => 30.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 7 : Exercise f</title>
+  </head>
+  <body>
+    <script>
+      function convertTemperture(degree, x) {
+        if (x === "C") {
+          return convertToFahrenheit(degree) + "F";
+        } else if ((x = "F")) {
+          return convertToCelsius(degree) + "C";
+        }
+      }
+
+      function convertToCelsius(fahrenheit) {
+        return (fahrenheit - 32) * (5 / 9);
+      }
+
+      function convertToFahrenheit(celsius) {
+        return celsius * (9 / 5) + 32;
+      }
+
+      console.log(convertTemperture(25, "C"));
+    </script>
+  </body>
+</html>
