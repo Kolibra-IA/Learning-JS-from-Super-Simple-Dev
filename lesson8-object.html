@@ -21,6 +21,34 @@
 
       product.newProperty = true;
       delete product.newProperty;
+
+      const product2 = {
+        name: "shirt",
+        ["delivery-time"]: "1-day",
+        rating: {
+          star: 4.5,
+          count: 86,
+        },
+        fun: function () {
+          console.log("Function inside object");
+        },
+      };
+
+      console.log(product2.name);
+      console.log(product2["delivery-time"]);
+      console.log(product2.rating.star);
+      console.log(product2.fun());
+
+      /* Built-in Objects
+
+      - Console (console.log).
+      - Math (Math.random()). 
+      - JSON (JSON.stringify()).
+      - JSON (JSON.parse()).
+      */
+
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
     </script>
   </body>
 </html>
