@@ -42,13 +42,59 @@
       /* Built-in Objects
 
       - Console (console.log).
-      - Math (Math.random()). 
+      - Math (Math.random()).
       - JSON (JSON.stringify()).
       - JSON (JSON.parse()).
       */
 
       const jsonString = JSON.stringify(product2);
       console.log(JSON.parse(jsonString));
+
+      //Objects are copied by reference: I mean if you assign an object to a variabe, what you are assignng is the reference to that object, not the object itself. For example:
+
+      const ayub = {
+        message: "good job!",
+      };
+
+      /* {message : 'good job!'} is not stored in ayub variable; instead, it is stored somewhere in memory and ony its reference is stored there.
+
+      If you attempt to copy the object to another variable A via its variable name, Ayub, you will only copy the reference - not the object.
+
+      In fact, you can make changes to that same object via the two variables A and ayub since they hold the same reference: */
+
+      const A = ayub;
+
+      ayub.message = "Great job!";
+
+      console.log(ayub.message);
+      console.log(A.message);
+
+      //The two above will spit out the same result since they hold the same reference to the object in memory!
+
+      /*
+
+      Destructing is a shortcut to assign object's properties' values to variables
+
+      */
+
+      const object4 = {
+        message: "Good job!",
+        price: 1000,
+      };
+
+      const { message, price } = object4;
+
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        message,
+        method() {
+          console.log("method");
+        },
+      };
+
+      console.log(object5);
     </script>
   </body>
 </html>
