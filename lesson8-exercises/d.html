@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 8c</title>
+  </head>
+  <body>
+    <script>
+      const product1 = {
+        name: "basketball1",
+        price: 2095,
+        "delivery-time": "3 days",
+      };
+
+      const product2 = {
+        name: "basketball2",
+        price: 2000,
+        "delivery-time": "3 days",
+      };
+
+      function comparePrice(product1, product2) {
+        if (product1.price < product2.price) {
+          return "Product1 is cheaper";
+        } else if (product2.price < product1.price) {
+          return "Product2 is cheaper";
+        } else {
+          return "Equal stuff";
+        }
+      }
+
+      console.log(comparePrice(product1, product2));
+    </script>
+  </body>
+</html>
