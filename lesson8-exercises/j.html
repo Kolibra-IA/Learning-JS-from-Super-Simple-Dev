@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6f</title>
+  </head>
+  <body>
+    <button onclick="playGame('Heads')">Heads</button>
+    <button onclick="playGame('Tails')">Tails</button>
+
+    <script>
+      /*
+        Question:
+        Instead of using if-statements in the previous exercises, try switching them into ternary operators (consition?A:B).
+        */
+
+      const score = {
+        win: 0,
+        loss: 0,
+      };
+
+      function playGame(guess) {
+        const randomNumber = Math.random();
+        console.log(randomNumber);
+        let result;
+
+        result = randomNumber <= 0.5 ? "Heads" : "Tails";
+
+        if (guess === result) {
+          console.log("You win!");
+          score.win++;
+          console.log(score);
+        } else {
+          console.log("You lose!");
+          score.loss++;
+          console.log(score);
+        }
+      }
+    </script>
+  </body>
+</html>
