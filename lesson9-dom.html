@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09-DOM</title>
+  </head>
+  <body>
+    <button class="js-button">Hello</button>
+    <script>
+      /*
+      The 'document' object represents the webpage; 'body' is an object within the 'document' object.
+      */
+
+      console.log(document.body);
+      console.log(document.body.innerHTML);
+      console.log(document.body.innerText);
+
+      document.querySelector("body");
+      document.querySelector(".js-button");
+    </script>
+  </body>
+</html>
