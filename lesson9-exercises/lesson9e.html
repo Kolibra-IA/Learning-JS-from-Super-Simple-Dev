@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9e</title>
+  </head>
+  <body>
+    <input
+      class="text-box"
+      onkeydown="
+        if (event.key === 'Enter') {
+          printText();
+        }
+      "
+    />
+    <button onclick="printText()">Submit</button>
+    <p></p>
+
+    <script>
+      function printText() {
+        document.querySelector("p").innerText =
+          document.querySelector(".text-box").value;
+      }
+    </script>
+  </body>
+</html>
