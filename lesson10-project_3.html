@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lesson 6: Project</title>
+    <link rel="stylesheet" href="styles/lesson10-project_3.css" />
+  </head>
+  <body>
+    <!--
+    Rules:
+    - Rock beats scissors.
+    - Paper beats rock.
+    - Scissors beats paper.
+    -->
+
+    <h1 class="title">Rock Paper Scissors</h1>
+    <button onclick="playGame('rock')" class="move-button">
+      <img src="images/rock-emoji.png" class="move-icon" alt="" />
+    </button>
+    <button onclick="playGame('paper')" class="move-button">
+      <img src="images/paper-emoji.png" class="move-icon" alt="" />
+    </button>
+    <button onclick="playGame('scissors')" class="move-button">
+      <img src="images/scissors-emoji.png" class="move-icon" alt="" />
+    </button>
+    <p class="js-result result"></p>
+    <p class="js-moves moves"></p>
+    <p class="js-score score"></p>
+    <button
+      onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+        document.querySelector('.js-moves').innerHTML = '';
+        document.querySelector('.js-result').innerText = '';
+      "
+      class="reset-score-button"
+    >
+      Reset Score
+    </button>
+
+    <script src="scripts/lesson10-project_3.js "></script>
+  </body>
+</html>
