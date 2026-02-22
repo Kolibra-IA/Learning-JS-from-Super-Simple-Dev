@@ -100,15 +100,7 @@ document.querySelector(".reset").addEventListener("click", function () {
   document.querySelector(".js-result").innerText = "";
 });
 function randomPlay() {
-  const userRandomMove = Math.random();
-
-  if (userRandomMove >= 0 && userRandomMove < 1 / 3) {
-    playGame("rock");
-  } else if (userRandomMove >= 1 / 3 && userRandomMove < 2 / 3) {
-    playGame("paper");
-  } else if (userRandomMove >= 2 / 3 && userRandomMove < 1) {
-    playGame("scissors");
-  }
+  playGame(pickComputerMove());
 }
 
 let checkCondition = "";
