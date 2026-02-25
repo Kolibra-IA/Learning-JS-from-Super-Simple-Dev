@@ -80,6 +80,10 @@ function pickComputerMove() {
   return computerMove;
 }
 
+function autoPlay() {
+  playGame(pickComputerMove());
+}
+
 document.querySelector(".rock").addEventListener("click", function () {
   playGame("rock");
 });
@@ -99,29 +103,16 @@ document.querySelector(".reset").addEventListener("click", function () {
   document.querySelector(".js-moves").innerHTML = "";
   document.querySelector(".js-result").innerText = "";
 });
-function randomPlay() {
-  playGame(pickComputerMove());
-}
 
-let checkCondition = "";
-const autoPlay = document.querySelector(".auto-play");
+let setTimeIntervalID = null;
 
-autoPlay.addEventListener("click", function () {
-  if (autoPlay.innerText === "Auto-play") {
-    autoPlay.innerHTML = "Stop";
-    checkCondition = true;
-
-    for (i = 0; checkCondition; i++) {
-      console.log("yes");
-      randomPlay();
-      console.log(autoPlay.innerText);
-
-      /*if (!checkCondition) {
-        break;
-      }*/
-    }
-  } /*else if (autoPlay.innerText === "Stop") {
-    checkCondition = false;
-    autoPlay.innerText = "Auto-play";
-  }*/
+document.querySelector(".auto-play").addEventListener("click", function () {
+  if (setTimeIntervalID === null) {
+    document.querySelector(".auto-play").innerText = "Stop";
+    setTimeIntervalID = setInterval(autoPlay, 3000);
+  } else if (setTimeIntervalID) {
+    document.querySelector(".auto-play").innerText = "Auto-play";
+    clearInterval(setTimeIntervalID);
+    setTimeIntervalID = null;
+  }
 });
