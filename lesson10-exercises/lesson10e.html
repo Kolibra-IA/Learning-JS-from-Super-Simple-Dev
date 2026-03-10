@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 10d</title>
+
+    <style>
+      button {
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(240, 240, 240);
+        border: none;
+        border-radius: 5px;
+        padding: 15px;
+      }
+
+      .is-toggled {
+        background-color: rgb(0, 0, 0);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="gaming">Gaming</button>
+    <button class="music">Music</button>
+    <button class="tech">Tech</button>
+
+    <script>
+      function toggledFunc(className) {
+        const buttonSelection = document.querySelector(className);
+        document
+          .querySelector(className)
+          .addEventListener("click", function () {
+            if (buttonSelection.classList.contains("is-toggled")) {
+              buttonSelection.classList.remove("is-toggled");
+            } else {
+              buttonSelection.classList.add("is-toggled");
+            }
+          });
+      }
+
+      toggledFunc(".gaming");
+      toggledFunc(".music");
+      toggledFunc(".tech");
+    </script>
+  </body>
+</html>
