@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 10 Project : Amazon Shipping Calculator</title>
+    <title>Lesson 10h Project : Amazon Shipping Calculator</title>
     <style>
       body {
         font-family: Arial;
@@ -61,13 +61,20 @@
 
         console.log(cost);
 
-        if (cost < 40) {
+        if (cost < 40 && cost >= 0) {
           cost = cost + 10;
+        } else if (cost < 0) {
+          cost = "Error: cost can't be less than $0";
         } else {
           cost = cost;
         }
 
-        document.querySelector(".js-total-cost").innerText = `$${cost}`;
+        if (cost === "Error: cost can't be less than $0") {
+          document.querySelector(".js-total-cost").innerText =
+            "Error: cost can't be less than $0";
+        } else {
+          document.querySelector(".js-total-cost").innerText = `$${cost}`;
+        }
       }
     </script>
   </body>
