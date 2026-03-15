@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Project 1</title>
+  </head>
+  <body>
+    <h1>Todo List Practice 1</h1>
+    <input type="text" placeholder="Todo name" class="todo" />
+    <button>Add</button>
+
+    <script>
+      let todoList = [];
+      document.querySelector("button").addEventListener("click", function () {
+        todoList.push(document.querySelector(".todo").value);
+        console.log(todoList);
+      });
+    </script>
+  </body>
+</html>
