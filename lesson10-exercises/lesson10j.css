@@ -22,3 +22,10 @@ button {
 .symbol-button {
   background-color: rgb(255, 127, 8);
 }
+
+.input-output {
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
