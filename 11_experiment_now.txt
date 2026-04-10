@@ -1,0 +1,48 @@
+
+GOAL:
+
+- Build a todo app.
+
+FUNCTIONALITIES:
+
+- Create a todo.
+
+- Create a date.
+
+- Be able to add the created todo and date via a add button.
+
+- Be able to delete the todo.
+
+- Any todo should be created in the same manner.
+
+
+Create a todo:
+
+- Use the input element to create an input slot.
+
+Create a date:
+
+- Use the input element to create a date beside the todo.
+
+Create an Add button:
+
+- Use the button element to create an Add button.
+
+- When the Add button is clicked:
+
+- There should be a check to see whether the todo and date fields are empty. 
+
+- If they are not empty, a new element should be added to the UI; the element should contain a todo, a date and a DELETE button.
+
+
+- A click event handler should be attached to each DELETE button.
+
+Delete a todo:
+
+- When a DELETE button is clicked, it should traverse to the parent node twice, so the immediate parent element of the button element is removed.
+
+
+
+THAT'S ALL!
+
+
