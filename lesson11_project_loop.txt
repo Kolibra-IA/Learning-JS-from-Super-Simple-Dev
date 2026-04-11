@@ -10,3 +10,12 @@ Algorithm:
 - Add it to array.
 
 - console.log() the array.
+
+
+Algorithm 2:
+
+- Loop through the array.
+
+- Create some HTML code for each todo.
+
+- Put the HTML on the page via the DOM.
