@@ -1,0 +1,12 @@
+
+Algorithm:
+
+- Create an array to store todos.
+
+- When we click "Add"
+
+- Get text from textbox.
+
+- Add it to array.
+
+- console.log() the array.
