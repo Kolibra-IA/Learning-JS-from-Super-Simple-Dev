@@ -1,0 +1,5 @@
+Algorithm:
+
+- Pop the last item out of the array.
+
+- Push the new element into the array.
