@@ -1,0 +1,16 @@
+
+Goal:
+
+- Create an app that takes an array and return an object with minimum and maximum numbers.
+
+Algorithm:
+
+- Create a function.
+
+- Create an object within the functon.
+
+- Loop through the array.
+
+- While looping, if each element is bigger than the maximum within the object, update the max.
+
+- However, if each element is smaller than the min, update it in the object.
