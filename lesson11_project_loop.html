@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles/lesson11_project_loop.css" />
   </head>
   <body>
     <h1>Todo App</h1>
-    <input type="text" placeholder="Todo name" class="js-name-input" />
-    <button onclick="addTodo()">Add</button>
-    <div class="js-todo-list"></div>
+    <div class="todo-input-grid">
+      <input
+        type="text"
+        placeholder="Todo name"
+        class="js-name-input name-input"
+      />
+      <input type="date" class="js-date-input due-date-input" />
+      <button onclick="addTodo()">Add</button>
+    </div>
+    <div class="js-todo-list todo-grid"></div>
 
     <script src="scripts/lesson11_project_loop.js"></script>
   </body>
