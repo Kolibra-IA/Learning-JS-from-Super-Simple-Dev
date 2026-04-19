@@ -1,0 +1,56 @@
+
+Goal:
+
+- Build a rock-paper-scissor game.
+
+Functionalities:
+
+- You make a pick.
+- The computer makes a move.
+- The two moves are compared, and the results announced based on these rules:
+
+- Rock beats scissor.
+- Paper beats rock.
+- scissor beats paper.
+
+UI:
+
+- Create an interface that includes:
+
+- User selecting a pick.
+- Computer selecting a pick.
+- Comparing the two picks.
+- Announcing the result.
+- The total results.
+- Reset.
+- Auto-play.
+
+UI Flow:
+
+- The picks for a user to select.
+- Only after a pick is selected should the computer pick be shown.
+- Only after a pick is selected should the result be compared.
+- Only after a pick is selected should the result be shown.
+
+Algorithm:
+
+General:
+
+- User selects a move.
+- The computer select a move at the same time.
+- On the basis of the rules, the moves are compared.
+- Result is shown.
+- Overall result is shown.
+- Clicking reset should reset the score.
+- Clicking auto-play shoud play the game automatically.
+
+Sub-problem Breakdown:
+
+User selects a move:
+
+- The user clicks on any of the picks' images.
+- JS is used to select the element and pick.
+
+Computer selects a move:
+
+- Computer selects a random move (rock, paper or scissor).
