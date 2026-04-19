@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Scissor-Paper Game</title>
+    <style>
+      .img-user {
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: black;
+        padding: 5px;
+      }
+    </style>
   </head>
   <body>
     <h1 style="font-family: Arial, Helvetica, sans-serif">
@@ -15,22 +24,18 @@
     <img src="../images/paper-emoji.png" alt="" class="img-user" />
 
     <h3>Computer's Move:</h3>
+    <p class="computer-move"></p>
 
-    <h3>Result Comparison:</h3>
+    <h3>Pick Comparison:</h3>
+    <p class="comparison"></p>
+
+    <h3>Round Result:</h3>
+    <p class="result"></p>
 
     <h3>Total Result:</h3>
     <p>Win: <span>0</span> Loss: <span>0</span> Tie: <span>0</span></p>
 
     <button>Reset</button> <button>Auto-play</button>
-
-    <style>
-      .img-user {
-        height: 50px;
-        border: 2px solid black;
-        border-radius: 50%;
-        background-color: black;
-        padding: 5px;
-      }
-    </style>
+    <script src="12-rpsgame.js"></script>
   </body>
 </html>

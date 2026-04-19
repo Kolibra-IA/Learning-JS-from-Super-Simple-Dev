@@ -47,10 +47,14 @@ General:
 Sub-problem Breakdown:
 
 User selects a move:
-
 - The user clicks on any of the picks' images.
 - JS is used to select the element and pick.
 
 Computer selects a move:
-
 - Computer selects a random move (rock, paper or scissor).
+
+Comparing the two moves:
+- Compare the user's and computer's moves.
+
+Result is shown:
+- Display the result: you win, you lose or you tie.
