@@ -58,3 +58,21 @@ Comparing the two moves:
 
 Result is shown:
 - Display the result: you win, you lose or you tie.
+
+Overall result is shown:
+
+- Update the scores.
+
+Clicking reset shoud reset the scores:
+
+- Whenever reset is clicked, the scores should be reset to 0.
+
+Clicking auto-play should play the game automatically:
+
+- When 'Auto-play' is clicked, change the text to 'Stop Auto-play'.
+- If the textContent is 'Auto-play', play the game in intervals.
+- However, if the textContent is 'Stop Auto-play', clear stop the game when clicked.
+
+When refreshed, the scores should be maintained:
+
+- Use localStorage for this to save the scores.
