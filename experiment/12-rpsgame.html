@@ -20,8 +20,12 @@
     </h1>
     <h3>User's Pick:</h3>
     <img src="../images/rock-emoji.png" alt="" class="img-user rock-pick" />
-    <img src="../images/scissors-emoji.png" alt="" class="img-user" />
-    <img src="../images/paper-emoji.png" alt="" class="img-user" />
+    <img
+      src="../images/scissors-emoji.png"
+      alt=""
+      class="img-user scissors-pick"
+    />
+    <img src="../images/paper-emoji.png" alt="" class="img-user paper-pick" />
 
     <h3>Computer's Move:</h3>
     <p class="computer-move"></p>
@@ -33,9 +37,13 @@
     <p class="result"></p>
 
     <h3>Total Result:</h3>
-    <p>Win: <span>0</span> Loss: <span>0</span> Tie: <span>0</span></p>
+    <p>
+      Win: <span id="win-count">0</span> Loss:
+      <span id="loss-count">0</span> Tie: <span id="tie-count">0</span>
+    </p>
 
-    <button>Reset</button> <button>Auto-play</button>
+    <button class="reset-button">Reset</button>
+    <button class="auto-play-button">Auto-play</button>
     <script src="12-rpsgame.js"></script>
   </body>
 </html>
