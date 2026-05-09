@@ -1,21 +1,27 @@
-const todoList = ["make dinner", "wash dishes"];
+const todoList = [
+  { name: "make dinner", dueDate: "22-12-2023" },
+  { name: "wash dishes", dueDate: "23-12-2023" },
+  { name: "watch YouTube", dueDate: "24-12-2023" },
+];
 
 renderTodoList();
 
 function renderTodoList() {
   let todoListHTML = "";
   for (let i = 0; i < todoList.length; i++) {
-    todoListHTML += `<p>${todoList[i]} <button onclick ="todoList.splice(i, 1); renderTodoList();">DELETE</button></p>`;
+    todoListHTML += `<p>${todoList[i].name} ${todoList[i].dueDate}<button onclick ='todoList.splice(${i},1); renderTodoList();'>DELETE</button></p>`;
   }
   document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
 
-function addtodo() {
+function addTodo() {
   const inputElement = document.querySelector(".js-name-input");
-  todoList.push(inputElement.value);
+  const dateElement = document.querySelector(".js-date-input");
+  todoList.push({ name: inputElement.value, dueDate: dateElement.value });
   console.log(todoList);
 
   inputElement.value = "";
+  dateElement.value = "";
   renderTodoList();
 }
 
