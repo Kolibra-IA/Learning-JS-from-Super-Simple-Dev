@@ -5,7 +5,7 @@ renderTodoList();
 function renderTodoList() {
   let todoListHTML = "";
   for (let i = 0; i < todoList.length; i++) {
-    todoListHTML += `<p>${todoList[i]}</p>`;
+    todoListHTML += `<p>${todoList[i]} <button onclick ="todoList.splice(i, 1); renderTodoList();">DELETE</button></p>`;
   }
   document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
