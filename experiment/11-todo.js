@@ -9,14 +9,14 @@ renderTodoList();
 function renderTodoList() {
   let todoListHTML = "";
   for (let i = 0; i < todoList.length; i++) {
-    todoListHTML += `<p>${todoList[i].name} ${todoList[i].dueDate}<button onclick ='todoList.splice(${i},1); renderTodoList();'>DELETE</button></p>`;
+    todoListHTML += `<div>${todoList[i].name}</div> <div>${todoList[i].dueDate}</div><button onclick ='todoList.splice(${i},1); renderTodoList();'>DELETE</button>`;
   }
   document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
 
 function addTodo() {
   const inputElement = document.querySelector(".js-name-input");
-  const dateElement = document.querySelector(".js-date-input");
+  const dateElement = document.querySelector(".js-due-date-input");
   todoList.push({ name: inputElement.value, dueDate: dateElement.value });
   console.log(todoList);
 
