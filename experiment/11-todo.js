@@ -9,7 +9,7 @@ renderTodoList();
 function renderTodoList() {
   let todoListHTML = "";
   for (let i = 0; i < todoList.length; i++) {
-    todoListHTML += `<div>${todoList[i].name}</div> <div>${todoList[i].dueDate}</div><button onclick ='todoList.splice(${i},1); renderTodoList();'>DELETE</button>`;
+    todoListHTML += `<div>${todoList[i].name}</div> <div>${todoList[i].dueDate}</div><button onclick ='todoList.splice(${i},1); renderTodoList();' class='delete-btn'>DELETE</button>`;
   }
   document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
