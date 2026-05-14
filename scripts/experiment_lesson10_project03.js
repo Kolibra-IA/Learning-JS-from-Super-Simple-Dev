@@ -109,7 +109,7 @@ let setTimeIntervalID = null;
 document.querySelector(".auto-play").addEventListener("click", function () {
   if (setTimeIntervalID === null) {
     document.querySelector(".auto-play").innerText = "Stop";
-    setTimeIntervalID = setInterval(autoPlay, 3000);
+    setTimeIntervalID = setInterval(autoPlay, 500);
   } else if (setTimeIntervalID) {
     document.querySelector(".auto-play").innerText = "Auto-play";
     clearInterval(setTimeIntervalID);
