@@ -24,3 +24,11 @@ Create a rock-paper-scissor game, which:
 
 - Computer pick.
 - Result.
+
+### Algorithm:
+
+- User clicks a pick.
+- Then, computer clicks a pick.
+- The picks are compared according to the rules.
+- The result is announced.
+- The score is updated accordingly.
