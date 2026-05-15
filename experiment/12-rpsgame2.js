@@ -33,7 +33,7 @@ document.querySelector(".autoplay").addEventListener("click", function () {
     autoplay.textContent = "Stop";
     intervalID = setInterval(function () {
       playGame(computerMove());
-    }, 1000);
+    }, 1);
   } else {
     autoplay.textContent = "Auto-play";
     clearInterval(intervalID);
