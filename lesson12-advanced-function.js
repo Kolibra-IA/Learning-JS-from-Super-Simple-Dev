@@ -10,3 +10,7 @@ const function1 = function () {
 };
 
 console.log(function1);
+
+["watch movies", "eat noodles", "drive cars"].forEach(function (value) {
+  console.log(value);
+});
