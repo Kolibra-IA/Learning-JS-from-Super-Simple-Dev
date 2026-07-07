@@ -1,3 +1,3 @@
 import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
 
-document.querySelector("body").innerHTML = `<p>${dayjs().format("")}</p>`;
+document.querySelector("body").innerHTML = `<p>${dayjs().format("dddd")}</p>`;
